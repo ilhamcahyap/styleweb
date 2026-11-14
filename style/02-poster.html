@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mengenal dan Menghadapi Longsor | SIAGA Longsor</title>
+<meta name="description" content="Edukasi kebencanaan untuk pelajar: penyebab longsor, 5 tanda bahaya, persiapan, tindakan saat dan sesudah longsor.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4F0E6; --ink:#111111; --yellow:#FFC400; --orange:#F26A1B; --green:#0B7A43; --line:#111;
+  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --body:"Public Sans",Arial,sans-serif;
+  --b:4px;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font:400 18px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+:focus-visible{outline:4px solid var(--ink);outline-offset:3px;box-shadow:0 0 0 7px var(--yellow)}
+.wrap{max-width:1360px;margin:0 auto;padding:0 32px}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:0;padding:calc(var(--b)/2)}
+.blk{border:var(--b) solid var(--line);margin:calc(var(--b)/-2);padding:28px;position:relative;min-width:0}
+.photo{padding:0;overflow:hidden;background:var(--ink)}
+.photo img{transition:transform .5s ease;min-height:100%}
+.photo:hover img{transform:scale(1.03)}
+.y{background:var(--yellow)}.o{background:var(--orange)}.k{background:var(--ink);color:var(--paper)}.g{background:var(--green);color:#fff}.p{background:var(--paper)}
+.c3{grid-column:span 3}.c4{grid-column:span 4}.c5{grid-column:span 5}.c6{grid-column:span 6}.c7{grid-column:span 7}.c8{grid-column:span 8}.c12{grid-column:span 12}
+
+h1,h2,h3,.num,.tag{font-family:var(--display);text-transform:uppercase;line-height:.9;letter-spacing:.005em}
+h1{font-size:clamp(60px,9vw,140px);font-weight:900}
+h2{font-size:clamp(44px,5.6vw,84px);font-weight:900}
+h3{font-size:clamp(28px,2.8vw,40px);font-weight:800;line-height:1}
+.num{font-weight:900;font-size:clamp(120px,17vw,260px);line-height:.78;display:block}
+.tag{display:inline-block;background:var(--ink);color:var(--yellow);font-weight:800;font-size:20px;padding:6px 12px 4px;letter-spacing:.06em;line-height:1}
+.tag.y{background:var(--yellow);color:var(--ink)}.tag.o{background:var(--orange);color:var(--ink)}.tag.g{background:var(--green);color:#fff}.tag.p{background:var(--paper);color:var(--ink)}
+p+p,p+ul,ul+p{margin-top:.8em}
+.lead{font-size:20px;font-weight:500;max-width:62ch}
+.txt{max-width:62ch}
+.src{font-size:16px;max-width:90ch}
+.hazard{height:34px;background:repeating-linear-gradient(135deg,var(--ink) 0 22px,var(--yellow) 22px 44px);border-top:var(--b) solid var(--ink);border-bottom:var(--b) solid var(--ink)}
+
+.top{background:var(--ink);color:var(--paper)}
+.top .wrap{display:flex;align-items:stretch;flex-wrap:wrap}
+.brand{font-family:var(--display);font-weight:900;font-size:28px;text-transform:uppercase;padding:12px 24px 10px 0;margin-right:12px;line-height:1;display:flex;align-items:center;text-decoration:none;color:var(--yellow)}
+.top nav{display:flex;flex-wrap:wrap}
+.top nav a{font-weight:700;font-size:16px;text-decoration:none;padding:14px 18px;border-left:2px solid #555;display:flex;align-items:center;min-height:48px}
+.top nav a:hover{background:var(--paper);color:var(--ink)}
+.top nav a[aria-current]{background:var(--yellow);color:var(--ink)}
+
+.chead{display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+section{padding:40px 0 20px}
+.toc a{font-weight:500}.toc b{font-weight:800}
+
+.chk{list-style:none;padding:0}
+.chk li{padding:12px 0 12px 44px;border-top:3px solid var(--ink);position:relative}
+.chk li:first-child{border-top:0}
+.chk li::before{content:"";position:absolute;left:0;top:18px;width:24px;height:24px;border:4px solid currentColor;background:var(--yellow)}
+.k .chk li{border-top-color:#666}.k .chk li::before{border-color:var(--yellow)}
+
+.sign{display:flex;flex-direction:column;justify-content:space-between;padding:0}
+.sign .ph{aspect-ratio:16/10;border-bottom:var(--b) solid var(--ink);overflow:hidden}
+.sign.big .ph{aspect-ratio:16/9}
+.sign .ph img{transition:transform .5s}
+.sign:hover .ph img{transform:scale(1.03)}
+.sign .bd{padding:22px 24px 26px;display:flex;gap:16px;align-items:flex-start}
+.sign .n{font-family:var(--display);font-weight:900;font-size:96px;line-height:.8;min-width:.55em}
+.sign h3{padding-top:4px}
+.sign p{font-size:17px;margin-top:8px;line-height:1.5}
+
+.vid{padding:0;display:flex;flex-direction:column;background:var(--ink);color:var(--paper)}
+.frame{position:relative;aspect-ratio:16/9;border-bottom:var(--b) solid var(--ink);overflow:hidden}
+.frame img{opacity:.8;transition:transform .5s,opacity .3s}
+.vid:hover .frame img{transform:scale(1.03);opacity:.92}
+.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:88px;height:88px;background:var(--yellow);border:var(--b) solid var(--ink);display:grid;place-items:center;cursor:pointer;transition:background .2s}
+.play:hover{background:var(--orange)}
+.play svg{width:34px;height:34px;margin-left:5px}
+.vid .tag{position:absolute;left:0;top:0}
+.vid .meta{padding:18px 22px 22px}
+.vid h3{color:var(--yellow);font-size:clamp(26px,2.4vw,34px)}
+.vid .meta p{font-size:16px;margin-top:12px}
+.vid .dur{display:inline-block;background:var(--yellow);color:var(--ink);font-weight:700;padding:1px 10px;margin-right:10px}
+
+.board{background:var(--ink);color:var(--paper);border:10px solid var(--yellow);outline:var(--b) solid var(--ink)}
+.board .in{padding:32px;border:var(--b) solid var(--paper);margin:12px}
+.big117{font-family:var(--display);font-weight:900;font-size:clamp(150px,22vw,330px);line-height:.8;color:var(--yellow);text-decoration:none;display:block;margin-top:10px}
+.cnt{font-family:var(--display);font-weight:900;font-size:clamp(36px,4.4vw,64px);line-height:1;color:var(--paper);text-decoration:none;display:block;margin-top:8px}
+.cnt:hover,.big117:hover{text-decoration:underline;text-decoration-thickness:6px;text-underline-offset:6px}
+.board small{font-family:var(--display);font-size:24px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--yellow);display:block;margin-top:24px}
+.board small:first-child{margin-top:0}
+.board a.lnk{color:var(--yellow);font-weight:700;word-break:break-word}
+
+footer{background:var(--ink);color:var(--paper);margin-top:40px;padding:28px 0 36px;font-size:16px}
+footer a{color:var(--yellow)}
+
+.two{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:end}
+.num.m{font-size:clamp(110px,15vw,230px)}
+
+@media (max-width:1024px){
+  .wrap{padding:0 20px}
+  .c3,.c4{grid-column:span 6}.c5,.c6,.c7,.c8{grid-column:span 12}
+  .sign.c4:last-of-type{grid-column:span 12}
+}
+@media (max-width:700px){
+  .wrap{padding:0 14px}
+  .grid>*{grid-column:span 12!important}
+  .blk{padding:20px}
+  .sign,.photo,.vid{padding:0}
+  .two .tag{justify-self:start}
+  .sign .bd{padding:18px 18px 22px}
+  .sign .n{font-size:72px}
+  .num{font-size:130px}.num.m{font-size:110px}
+  .two{grid-template-columns:1fr;gap:10px}
+  .brand{padding:10px 0 4px;width:100%}
+  .top nav a{padding:12px;font-size:15px}
+  .play{width:72px;height:72px}
+  .board{border-width:6px}.board .in{padding:20px 14px;margin:8px}
+  .tag{font-size:18px}
+  .vid .meta{padding:16px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+ <div class="wrap">
+  <a class="brand" href="#atas">SIAGA Longsor</a>
+  <nav aria-label="Navigasi situs">
+   <a href="https://siagalongsor.web.id/">Beranda</a>
+   <a href="#atas" aria-current="page">Edukasi</a>
+   <a href="https://siagalongsor.web.id/">Data Desa</a>
+   <a href="https://siagalongsor.web.id/">Prediksi &amp; Peta</a>
+   <a href="https://siagalongsor.web.id/">Informasi Data</a>
+  </nav>
+ </div>
+</header>
+
+<main id="atas">
+<section style="padding-top:36px">
+ <div class="wrap">
+  <div class="grid">
+   <div class="blk y c7" style="display:flex;flex-direction:column;justify-content:space-between;gap:32px">
+    <span class="tag" style="align-self:flex-start">Edukasi kebencanaan</span>
+    <h1>Mengenal dan menghadapi longsor</h1>
+    <p class="lead">Tanah di lereng bisa bergerak turun. Kenali penyebabnya, hafal 5 tandanya, dan tahu apa yang harus dilakukan sebelum, saat, dan sesudahnya.</p>
+   </div>
+   <div class="blk photo c5" style="min-height:420px">
+    <picture><source media="(max-width:700px)" srcset="../_shared/img/hero-nganjuk-m.webp"><img src="../_shared/img/hero-nganjuk.webp" alt="Foto udara bekas longsor cokelat di lereng hijau di atas permukiman, Nganjuk" width="1600" height="1000" style="object-position:60% 50%"></picture>
+   </div>
+   <nav class="blk p c12 toc" aria-label="Daftar isi" style="display:flex;gap:10px 28px;flex-wrap:wrap;align-items:center;padding:16px 28px">
+    <span class="tag o">Isi halaman</span>
+    <a href="#b01"><b>01</b> Pengertian</a><a href="#b02"><b>02</b> Waspada</a><a href="#b03"><b>03</b> Sebelum</a><a href="#b04"><b>04</b> Saat</a><a href="#b05"><b>05</b> Sesudah</a><a href="#kontak"><b>SOS</b> Kontak darurat</a>
+   </nav>
+  </div>
+ </div>
+</section>
+<div class="hazard" aria-hidden="true" style="margin-top:20px"></div>
+
+<section id="b01">
+ <div class="wrap"><div class="grid">
+  <div class="blk p c5 chead">
+   <span class="num">01</span>
+   <div><span class="tag">Pengertian</span><h2 style="margin-top:14px">Apa itu longsor dan apa penyebabnya?</h2></div>
+  </div>
+  <div class="blk photo c7" style="min-height:380px"><picture><source media="(max-width:700px)" srcset="../_shared/img/penyebab-lereng-m.webp"><img src="../_shared/img/penyebab-lereng.webp" alt="Bukit terjal berteras dengan sedikit pohon besar" width="1600" height="1000"></picture></div>
+
+  <div class="blk y c7">
+   <p class="lead">Longsor terjadi ketika tanah di lereng yang labil bergerak turun dan menimbulkan bencana, terutama bagi warga yang tinggal di tempat lebih rendah. Badan Geologi menyebutnya gerakan tanah longsor.</p>
+  </div>
+  <div class="blk k c5"><span class="tag y">Pemicu</span><h3 style="margin-top:12px">Tiga hal yang disebut sumber resmi</h3></div>
+
+  <div class="blk o c5"><h3>Hujan intensitas tinggi</h3><p>BNPB menyebut hujan yang berlangsung beberapa hari. Menurut Badan Geologi, hujan lebat menambah tekanan air di dalam tanah dan menurunkan kekuatannya, sehingga lereng gagal.</p></div>
+  <div class="blk p c3"><h3>Gempa bumi</h3><p>Getarannya dapat melemahkan kekuatan lereng.</p></div>
+  <div class="blk p c4"><h3>Kegiatan manusia</h3><p>Misalnya pemotongan lereng dan peledakan di area tambang.</p></div>
+
+  <div class="blk p c5">
+   <span class="tag">Faktor lereng</span>
+   <h3 style="margin:12px 0 0">Mudah atau tidaknya lereng longsor dipengaruhi oleh</h3>
+  </div>
+  <div class="blk p c7">
+   <ul class="chk">
+    <li>Kemiringan dan bentuk lereng</li>
+    <li>Kondisi geologi</li>
+    <li>Kondisi air atau hidrologi di lereng</li>
+    <li>Perubahan tata guna lahan</li>
+    <li>Kegagalan konstruksi</li>
+    <li>Saluran air permukaan yang belum baik</li>
+   </ul>
+  </div>
+
+  <article class="blk vid c6" aria-label="Kartu video: Bagaimana hujan membuat lereng runtuh">
+   <div class="frame"><img src="../_shared/img/menu-bukit.webp" alt="" width="1600" height="900"><span class="tag y">Video</span>
+    <button class="play" type="button" aria-label="Putar video: Bagaimana hujan membuat lereng runtuh"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3l16 9-16 9z" fill="#111"/></svg></button></div>
+   <div class="meta"><h3>Bagaimana hujan membuat lereng runtuh</h3><p><span class="dur">± 3 menit</span>Sumber video: diisi tim</p></div>
+  </article>
+  <div class="blk p c6" style="display:flex;flex-direction:column;justify-content:flex-end">
+   <p class="src"><b>Sumber.</b> BNPB, &ldquo;Tanah Longsor&rdquo; (27 Des 2017); Kementerian ESDM/Badan Geologi, &ldquo;Curah Hujan Tinggi, Masyarakat Diminta Waspadai Gerakan Tanah Longsor&rdquo; (6 Feb 2018); Kementerian ESDM/Badan Geologi, &ldquo;Longsor Terjang Desa Pasirlangu, Badan Geologi Ingatkan Ancaman Longsor Susulan&rdquo; (25 Jan 2026).</p>
+  </div>
+ </div></div>
+</section>
+
+<section id="b02">
+ <div class="wrap"><div class="grid">
+  <div class="blk y c12 two">
+   <span class="num m">02</span>
+   <div><span class="tag">Waspada</span><h2 style="margin:12px 0 14px">5 tanda bahaya</h2><p class="lead">Kalau kamu tinggal di perbukitan atau dekat tebing, kenali tanda awal ini dan terus pantau keadaan sekitar.</p></div>
+  </div>
+
+  <article class="blk sign big c7 p"><div class="ph"><img src="../_shared/img/tanda-talud.webp" alt="Tepi jalan amblas dan talud runtuh di Ayah, Kebumen" width="1600" height="1000"></div><div class="bd"><span class="n">1</span><div><h3>Retakan di tanah atau lereng</h3><p>BNPB: retakan yang sejajar dengan tebing.</p></div></div></article>
+  <article class="blk sign c5 o"><div class="ph"><img src="../_shared/img/kuis-teras.webp" alt="Sawah bertingkat di lereng, Selogriyo" width="1600" height="1000"></div><div class="bd"><span class="n">2</span><div><h3>Mata air baru atau air keruh</h3><p>Mata air baru muncul, atau air mata air dan sumur tiba-tiba keruh.</p></div></div></article>
+  <article class="blk sign c4 p"><div class="ph"><img src="../_shared/img/close-laukawar.webp" alt="Bekas longsor di lereng hutan tepi Danau Lau Kawar" width="1600" height="1000"></div><div class="bd"><span class="n">3</span><div><h3>Pohon atau tiang miring</h3></div></div></article>
+  <article class="blk sign c4 y"><div class="ph"><img src="../_shared/img/menu-bukit.webp" alt="Lereng bukit longsor di atas rumah warga, Kebumen" width="1600" height="1000"></div><div class="bd"><span class="n">4</span><div><h3>Kerikil berjatuhan dari tebing</h3></div></div></article>
+  <article class="blk sign c4 k"><div class="ph"><img src="../_shared/img/hero-nganjuk.webp" alt="Foto udara lereng bekas longsor di atas permukiman" width="1600" height="1000" style="object-position:20% 40%"></div><div class="bd"><span class="n" style="color:var(--yellow)">5</span><div><h3>Suara gemuruh dari dalam tanah</h3></div></div></article>
+
+  <div class="blk p c12"><p class="src"><b>Sumber.</b> BNPB, &ldquo;Tanah Longsor di Tapanuli Selatan Telan Dua Korban Meninggal&rdquo; (23 Feb 2025); Badan Geologi, &ldquo;Tanah Longsor Kembali Terjadi di Ponorogo, Masyarakat Diminta Waspada&rdquo; (9 Apr 2017).</p></div>
+ </div></div>
+</section>
+
+<section id="b03">
+ <div class="wrap"><div class="grid">
+  <div class="blk photo c5" style="min-height:360px"><picture><source media="(max-width:700px)" srcset="../_shared/img/sebelum-sekolah-m.webp"><img src="../_shared/img/sebelum-sekolah.webp" alt="Papan Jalur Evakuasi di dinding gedung kampus" width="1600" height="1000"></picture></div>
+  <div class="blk p c7 chead">
+   <div class="two"><span class="num">03</span><div><span class="tag">Sebelum</span><h2 style="margin-top:12px">Persiapan sebelum longsor</h2></div></div>
+  </div>
+
+  <div class="blk o c5">
+   <span class="tag">Sorotan</span>
+   <h3 style="margin:14px 0 10px;font-size:clamp(34px,3.6vw,52px)">Hujan deras lebih dari 1 jam? Evakuasi.</h3>
+   <p>BNPB (23 Feb 2025) mengimbau warga mengevakuasi diri ke tempat yang lebih aman bila hujan intensitas tinggi berlangsung lebih dari satu jam.</p>
+  </div>
+  <div class="blk k c7">
+   <ul class="chk">
+    <li>Waspadai hujan dengan curah tinggi dan simak informasi tentang hujan serta kemungkinan longsor. BNPB menyebut radio sebagai salah satu sarana.</li>
+    <li>Siapkan makanan dan minuman siap saji, senter beserta baterai cadangan, uang tunai secukupnya, dan obat-obatan sesuai kebutuhan.</li>
+    <li>Jangan menebang tanaman keras di lereng, jangan menggali lereng secara tegak lurus, dan atur aliran air permukaan di lereng.</li>
+    <li>Bersiaplah mengevakuasi diri begitu pihak berwenang menginstruksikannya.</li>
+   </ul>
+  </div>
+  <div class="blk p c12"><p class="src"><b>Sumber.</b> BNPB, &ldquo;Tanah Longsor&rdquo; (27 Des 2017); Badan Geologi (2017); BNPB, &ldquo;Tanah Longsor di Tapanuli Selatan Telan Dua Korban Meninggal&rdquo; (23 Feb 2025).</p></div>
+ </div></div>
+</section>
+
+<section id="b04">
+ <div class="wrap"><div class="grid">
+  <div class="blk g c12 two">
+   <span class="num m">04</span>
+   <div><span class="tag p">Saat</span><h2 style="margin-top:12px">Saat longsor terjadi</h2></div>
+  </div>
+  <div class="blk p c4"><span class="tag">Di dalam rumah</span><h3 style="margin:14px 0 10px;font-size:clamp(34px,3.2vw,48px)">Dengar gemuruh? Keluar.</h3><p>Segera keluar menuju tempat lapang yang tidak terhalang.</p></div>
+  <div class="blk y c4"><span class="tag">Di luar rumah</span><h3 style="margin:14px 0 10px;font-size:clamp(34px,3.2vw,48px)">Cari tempat lapang.</h3><p>Perhatikan sisi lereng atau tanah yang longsor.</p></div>
+  <div class="blk photo c4" style="min-height:260px"><picture><source media="(max-width:700px)" srcset="../_shared/img/saat-rambu-m.webp"><img src="../_shared/img/saat-rambu.webp" alt="Rambu hijau Jalur Evakuasi di jalan hutan pinus, Bromo" width="1600" height="1000"></picture></div>
+
+  <div class="blk k c5" style="display:flex;flex-direction:column;justify-content:space-between;gap:24px"><span class="tag y" style="align-self:flex-start">Selalu</span><h3 style="font-size:clamp(44px,5.4vw,80px)">Ikuti arahan BPBD dan petugas setempat.</h3></div>
+  <article class="blk vid c7" aria-label="Kartu video: Apa yang dilakukan saat tanah mulai bergerak">
+   <div class="frame"><img src="../_shared/img/rencana-tangga.webp" alt="" width="1600" height="900"><span class="tag y">Video</span>
+    <button class="play" type="button" aria-label="Putar video: Apa yang dilakukan saat tanah mulai bergerak"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3l16 9-16 9z" fill="#111"/></svg></button></div>
+   <div class="meta"><h3>Apa yang dilakukan saat tanah mulai bergerak</h3><p><span class="dur">± 4 menit</span>Sumber video: diisi tim</p></div>
+  </article>
+  <div class="blk p c12"><p class="src"><b>Sumber.</b> BNPB, &ldquo;Tanah Longsor&rdquo; (27 Des 2017).</p></div>
+ </div></div>
+</section>
+
+<section id="b05">
+ <div class="wrap"><div class="grid">
+  <div class="blk p c5 chead">
+   <span class="num">05</span>
+   <div><span class="tag">Sesudah</span><h2 style="margin-top:12px">Setelah longsor</h2></div>
+  </div>
+  <div class="blk photo c7" style="min-height:360px"><picture><source media="(max-width:700px)" srcset="../_shared/img/sesudah-aliran-m.webp"><img src="../_shared/img/sesudah-aliran.webp" alt="Jalur aliran tanah dan batu longsoran di lembah hutan, Simalungun" width="1600" height="1000"></picture></div>
+
+  <div class="blk o c6"><h3 style="font-size:clamp(34px,3.4vw,52px)">Jangan segera kembali ke rumah.</h3><p style="margin-top:12px">Daerah bencana dan sekitarnya masih berpotensi longsor susulan, terutama saat dan setelah hujan deras. Warga diminta mengungsi ke lokasi yang aman.</p></div>
+  <div class="blk p c6"><span class="tag">Mau membantu?</span><p style="margin-top:14px">Bila diminta membantu evakuasi, pakai sepatu khusus dan peralatan keselamatan, pastikan pijakan cukup kokoh, dan jangan memperburuk keadaan di reruntuhan. Atau tunggu petugas.</p></div>
+  <div class="blk k c12"><p style="max-width:80ch"><span class="tag y" style="margin-right:10px">Untuk petugas</span>Badan Geologi mengingatkan agar tidak melakukan penanganan atau pencarian korban saat dan sesudah hujan deras, karena risiko longsor susulan masih tinggi.</p></div>
+  <div class="blk p c12"><p class="src"><b>Sumber.</b> BNPB (27 Des 2017); Badan Geologi (2017); Badan Geologi (25 Jan 2026).</p></div>
+ </div></div>
+</section>
+
+<div class="hazard" aria-hidden="true"></div>
+
+<section id="kontak">
+ <div class="wrap">
+  <div class="board">
+   <div class="in">
+    <span class="tag y">Kontak darurat</span>
+    <div class="grid" style="margin-top:22px;gap:24px">
+     <div class="c6" style="min-width:0"><small>BNPB Call Center</small><a class="big117" href="tel:117" aria-label="Telepon BNPB 117">117</a></div>
+     <div class="c6" style="min-width:0">
+      <small>Pusdalops BNPB, 24 jam</small><a class="cnt" href="tel:+622129827444">+62 21 29827444</a>
+      <small>Bantuan setempat</small>
+      <p style="margin-top:6px">Aparat desa dan BPBD kabupaten/kota. Kontak BPBD Provinsi Jawa Barat di <a class="lnk" href="https://bpbd.jabarprov.go.id">bpbd.jabarprov.go.id</a>.</p>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <div class="grid" style="margin-top:28px">
+   <div class="blk o c12 two" style="align-items:start">
+    <span class="tag">Belum tersedia</span>
+    <div><h3 style="margin-bottom:10px">Yang belum disediakan aplikasi ini</h3><p class="txt">SIAGA Longsor belum memberikan peringatan dini maupun perintah evakuasi. Prediksi harian masih percobaan. Tujuan dan rute evakuasi antardesa belum tersedia. Ikuti arahan BPBD atau petugas setempat.</p></div>
+   </div>
+   <div class="blk p c12"><p class="txt"><b>Catatan sumber.</b> Ringkasan disarikan dari siaran resmi BNPB dan Badan Geologi (Kementerian ESDM). Sebagian sumber berupa berita kejadian, bukan buku panduan. Ringkasan ini tidak menggantikan arahan BPBD dan petugas setempat.</p></div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap"><p>Kredit dan lisensi foto: lihat <a href="../_shared/credits.html">halaman kredit foto</a>. SIAGA Longsor, Edukasi kebencanaan.</p></div>
+</footer>
+</body>
+</html>
